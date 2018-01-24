@@ -13,7 +13,7 @@ module.exports = () => {
                 loader: 'css-loader',
                 options: {
                   importLoaders: 1,
-                  sourceMap: process.env.NODE_ENV === 'production',
+                  sourceMap: process.env.NODE_ENV !== 'production',
                 },
               },
               {
@@ -34,7 +34,10 @@ module.exports = () => {
                 },
               },
               {
-                loader: 'sass-loader'
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: process.env.NODE_ENV !== 'production'
+                }
               }
             ],
           }),
