@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Quicksand";
+  @include flex(column, nowrap, flex-start, flex-start);
+}
+* {
+  @include font(16,$dark_text,false,false,400);
+}
+.wrapper {
+  width: 100%;
+  flex: 1 0 auto;
+}

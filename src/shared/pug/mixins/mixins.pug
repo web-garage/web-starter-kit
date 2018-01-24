@@ -1,0 +1,6 @@
+mixin image(source)
+  img(src=require(`../assets/${source}`))&attributes(attributes)
+
+mixin svg(icon, w, h)
+  svg(width=w, height=h)&attributes(attributes)
+    use(xlink:href="images/sprite.svg#"+icon)

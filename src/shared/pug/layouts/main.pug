@@ -1,0 +1,9 @@
+include ../mixins/mixins.pug
+doctype html
+html(lang="en")
+  include ../includes/head.pug
+  body
+    .wrapper
+      include ../../../components/header/header
+      block content
+    include ../../../components/footer/footer
