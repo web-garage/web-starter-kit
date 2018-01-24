@@ -9,6 +9,7 @@ const navigationMenu = () => {
         z-index: 1;
         bottom: 5vh;
         right: 5vh;
+        z-index: 999999999;
       }
       .zn-open {
         width: 50px;
@@ -62,6 +63,9 @@ const navigationMenu = () => {
         min-width: 250px;
         height: 400px;
         border: 2px solid #ffdb4d;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         visibility: hidden;
         opacity: 0;
         -webkit-transform: translate3d(0, 20px, 0);

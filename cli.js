@@ -37,7 +37,7 @@ if (process.argv.length < 3 || process.argv.length > 4) {
   console.log('!!! Invalid number of commands !!!');
 } else if (params.split(' ').length > 1 || params.split(',').length > 1) {
   console.log('!!! Invalid file name !!!');
-} else if (event === 'c') {
+} else if (event === 'c' || event === 'component') {
   if (!fs.existsSync(folder)) {
     fs.mkdirSync(folder);
     fs.writeFileSync(`${dirComponent}${params}/${params}.pug`, template);
@@ -67,7 +67,7 @@ if (process.argv.length < 3 || process.argv.length > 4) {
   } else {
     console.log('!!! Component exists !!!');
   }
-} else if (event === 'p') {
+} else if (event === 'p' || event === 'page') {
   fs.writeFileSync(`${dirPages}/${params}.pug`, templatePage);
 
   fs.readFile(rootPages, 'utf8', (error, data) => {
