@@ -31,7 +31,7 @@
 
 ###### step 1
 ```bash
-git clone https://github.com/michael-disko/web-starter-kit
+git clone https://github.com/web-garage/web-starter-kit
 ```
 ###### step 2
 ```bash
