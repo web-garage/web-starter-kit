@@ -62,8 +62,8 @@ Scaffold  | Usage
 ---       | ---
 Development | `npm run start`
 Production | `npm run build`
-Create new page | `npm run g -- p _name_`
-Create new component | `npm run g -- c _name_`
+Create new page | `npm run g p 'name'`
+Create new component | `npm run g c 'name'`
 
 *Web Starter Kit will automatically connect **js** and **scss** files*
 
