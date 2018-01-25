@@ -4,7 +4,7 @@
   "description": "Web Starter Kit. Builder for frontend developers",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --config webpack.dev.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
     "g": "node cli.js"
   },
