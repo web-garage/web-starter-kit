@@ -1,7 +1,7 @@
 module.exports = () => {
   const config = {
     devServer: {
-      port: 8000,
+      port: 3000,
       stats: 'errors-only',
       open: true,
       watchOptions: {
