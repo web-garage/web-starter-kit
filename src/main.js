@@ -1,7 +1,7 @@
 // @Import js
 import { navigationMenu } from './shared/js/navigation';
 import { header } from './components/header/header';
-import { main } from './components/main/main';
+import { content } from './components/content/content';
 import { footer } from './components/footer/footer';
 
 // @Import css
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // @Start call function
   header();
-  main();
+  content();
   footer();
   // @End call function
 });
