@@ -28,7 +28,7 @@ module.exports = merge([
       }),
       // @End added page template
       new StyleLintPlugin({
-        configFile: './stylelint.config.js',
+        configFile: './.stylelintrc',
         files: 'src/**/*.scss',
       }),
       new ExtractTextPlugin('css/index.css'),
