@@ -10,13 +10,7 @@ module.exports = () => {
               loader: 'babel-loader',
               options: {
                 cacheDirectory: true,
-                presets: [
-                  ['env', {
-                    'targets': {
-                      'browsers': ['last 2 versions']
-                    }
-                  }]
-                ]
+                presets: ['es2015', 'stage-2', 'es2017']
               },
             },
             {
